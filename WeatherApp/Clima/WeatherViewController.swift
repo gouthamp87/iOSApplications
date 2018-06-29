@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import Alamofire
 import SwiftyJSON
+import WebKit
 
 class WeatherViewController: UIViewController, CLLocationManagerDelegate, ChangeCityDelegate {
 
@@ -27,7 +28,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
         }
     }*/
     
-
     
     //Pre-linked IBOutlets
     @IBOutlet weak var weatherIcon: UIImageView!
@@ -45,6 +45,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
         locationManager.requestAlwaysAuthorization()
         //start location updates
 //        locationManager.startUpdatingLocation()
+        
+        let configuration = WKWebViewConfiguration()
+        configuration.websiteDataStore = WKWebsiteDataStore.nonPersistent()
+//        let webView = WKWebView(frame: , configuration: configuration)
     }
     
     
@@ -62,7 +66,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
             }
             else
             {
-                print("\(response.result.error)")
+                print("\(String(describing: response.result.error))")
                 self.cityLabel.text = "Networking issues"
             }
         }

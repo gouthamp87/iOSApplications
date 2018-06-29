@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.930624"
+            timestampString = "551775423.038434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.930982"
+            timestampString = "551775423.038787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "locationManager(_:didFailWithError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.9312021"
+            timestampString = "551775423.039013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.9314311"
+            timestampString = "551775423.039233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "locationManager(_:didChangeAuthorization:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.931638"
+            timestampString = "551775423.039454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "getWeatherData(url:params:)"
             landmarkType = "7">
             <Locations>
@@ -89,12 +89,12 @@
                   symbolName = "Clima.WeatherViewController.getWeatherData(url: Swift.String, params: Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
                   moduleName = "Clima"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/goutham/Personal/Learning/Swift/Clima-iOS11-master/Clima/WeatherViewController.swift"
-                  timestampString = "551673371.985445"
+                  urlString = "file:///Users/goutham/Personal/Learning/iOSApplications/WeatherApp/Clima/WeatherViewController.swift"
+                  timestampString = "551775423.701421"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
                   offsetFromSymbolStart = "33">
                </Location>
                <Location
@@ -104,12 +104,12 @@
                   symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Clima.WeatherViewController.getWeatherData(url: Swift.String, params: Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
                   moduleName = "Clima"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/goutham/Personal/Learning/Swift/Clima-iOS11-master/Clima/WeatherViewController.swift"
-                  timestampString = "551673371.9873019"
+                  urlString = "file:///Users/goutham/Personal/Learning/iOSApplications/WeatherApp/Clima/WeatherViewController.swift"
+                  timestampString = "551775423.703125"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
                   offsetFromSymbolStart = "29">
                </Location>
             </Locations>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.9318579"
+            timestampString = "551775423.039669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "getWeatherData(url:params:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,12 +138,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clima/WeatherViewController.swift"
-            timestampString = "551726804.9320689"
+            timestampString = "551775423.03988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "getWeatherData(url:params:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Clima/WeatherViewController.swift"
+            timestampString = "551775423.040089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63A618291C53C381007AF001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A618281C53C381007AF001 /* AppDelegate.swift */; };
+		63A6182B1C53C381007AF001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6182A1C53C381007AF001 /* ViewController.swift */; };
+		63A6182E1C53C381007AF001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A6182C1C53C381007AF001 /* Main.storyboard */; };
+		63A618301C53C381007AF001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A6182F1C53C381007AF001 /* Assets.xcassets */; };
+		63A618331C53C381007AF001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A618311C53C381007AF001 /* LaunchScreen.storyboard */; };
+		6D780FF720E65215003897BF /* BitcoinTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D780FF620E65215003897BF /* BitcoinTickerTests.swift */; };
+		FE17D66A6522603DA89B6826 /* Pods_BitcoinTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0312C601669C4436C853D0E6 /* Pods_BitcoinTicker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D780FEA20E4D20E003897BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D780FE420E4D20D003897BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C104F1D33EF1B943A03A2FE0B4DA36E;
+			remoteInfo = Alamofire;
+		};
+		6D780FEC20E4D20E003897BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D780FE420E4D20D003897BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3F58DC4020D1D9DF2FC8839DB050B29;
+			remoteInfo = "Pods-BitcoinTicker";
+		};
+		6D780FEE20E4D20E003897BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D780FE420E4D20D003897BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5DE3DCC7EAE6ADEAAA72B81917B9DE4;
+			remoteInfo = SwiftyJSON;
+		};
+		6D780FF920E65215003897BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A6181D1C53C381007AF001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A618241C53C381007AF001;
+			remoteInfo = BitcoinTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0312C601669C4436C853D0E6 /* Pods_BitcoinTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A618251C53C381007AF001 /* BitcoinTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A618281C53C381007AF001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63A6182A1C53C381007AF001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63A6182D1C53C381007AF001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63A6182F1C53C381007AF001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A618321C53C381007AF001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63A618341C53C381007AF001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D780FE420E4D20D003897BF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		6D780FF420E65214003897BF /* BitcoinTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D780FF620E65215003897BF /* BitcoinTickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinTickerTests.swift; sourceTree = "<group>"; };
+		6D780FF820E65215003897BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A46877D863A375B969E8C58 /* Pods-BitcoinTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinTicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinTicker/Pods-BitcoinTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0DFB6BECD8BD02A699BDA7 /* Pods-BitcoinTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinTicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinTicker/Pods-BitcoinTicker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63A618221C53C381007AF001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE17D66A6522603DA89B6826 /* Pods_BitcoinTicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D780FF120E65214003897BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28EC52701505CE9DC6059BC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0312C601669C4436C853D0E6 /* Pods_BitcoinTicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63A6181C1C53C381007AF001 = {
+			isa = PBXGroup;
+			children = (
+				6D780FE420E4D20D003897BF /* Pods.xcodeproj */,
+				63A618271C53C381007AF001 /* BitcoinTicker */,
+				6D780FF520E65215003897BF /* BitcoinTickerTests */,
+				63A618261C53C381007AF001 /* Products */,
+				BA601EE7EF69474E7432D4A2 /* Pods */,
+				28EC52701505CE9DC6059BC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63A618261C53C381007AF001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63A618251C53C381007AF001 /* BitcoinTicker.app */,
+				6D780FF420E65214003897BF /* BitcoinTickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63A618271C53C381007AF001 /* BitcoinTicker */ = {
+			isa = PBXGroup;
+			children = (
+				63A618281C53C381007AF001 /* AppDelegate.swift */,
+				63A6182A1C53C381007AF001 /* ViewController.swift */,
+				63A6182C1C53C381007AF001 /* Main.storyboard */,
+				63A6182F1C53C381007AF001 /* Assets.xcassets */,
+				63A618311C53C381007AF001 /* LaunchScreen.storyboard */,
+				63A618341C53C381007AF001 /* Info.plist */,
+			);
+			path = BitcoinTicker;
+			sourceTree = "<group>";
+		};
+		6D780FE520E4D20D003897BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D780FEB20E4D20E003897BF /* Alamofire.framework */,
+				6D780FED20E4D20E003897BF /* Pods_BitcoinTicker.framework */,
+				6D780FEF20E4D20E003897BF /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D780FF520E65215003897BF /* BitcoinTickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D780FF620E65215003897BF /* BitcoinTickerTests.swift */,
+				6D780FF820E65215003897BF /* Info.plist */,
+			);
+			path = BitcoinTickerTests;
+			sourceTree = "<group>";
+		};
+		BA601EE7EF69474E7432D4A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A46877D863A375B969E8C58 /* Pods-BitcoinTicker.debug.xcconfig */,
+				AA0DFB6BECD8BD02A699BDA7 /* Pods-BitcoinTicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A618241C53C381007AF001 /* BitcoinTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A618371C53C381007AF001 /* Build configuration list for PBXNativeTarget "BitcoinTicker" */;
+			buildPhases = (
+				0AF69213CBB61CC84B080488 /* [CP] Check Pods Manifest.lock */,
+				63A618211C53C381007AF001 /* Sources */,
+				63A618221C53C381007AF001 /* Frameworks */,
+				63A618231C53C381007AF001 /* Resources */,
+				5897229423BB72BAE24CA1F1 /* [CP] Embed Pods Frameworks */,
+				B0B6DD44DB50B6F49137FFCF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinTicker;
+			productName = BitcoinTicker;
+			productReference = 63A618251C53C381007AF001 /* BitcoinTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D780FF320E65214003897BF /* BitcoinTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D780FFB20E65215003897BF /* Build configuration list for PBXNativeTarget "BitcoinTickerTests" */;
+			buildPhases = (
+				6D780FF020E65214003897BF /* Sources */,
+				6D780FF120E65214003897BF /* Frameworks */,
+				6D780FF220E65214003897BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D780FFA20E65215003897BF /* PBXTargetDependency */,
+			);
+			name = BitcoinTickerTests;
+			productName = BitcoinTickerTests;
+			productReference = 6D780FF420E65214003897BF /* BitcoinTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63A6181D1C53C381007AF001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "London App Brewery";
+				TargetAttributes = {
+					63A618241C53C381007AF001 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4XGN67BQAE;
+						LastSwiftMigration = 0900;
+					};
+					6D780FF320E65214003897BF = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63A618241C53C381007AF001;
+					};
+				};
+			};
+			buildConfigurationList = 63A618201C53C381007AF001 /* Build configuration list for PBXProject "BitcoinTicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63A6181C1C53C381007AF001;
+			productRefGroup = 63A618261C53C381007AF001 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D780FE520E4D20D003897BF /* Products */;
+					ProjectRef = 6D780FE420E4D20D003897BF /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				63A618241C53C381007AF001 /* BitcoinTicker */,
+				6D780FF320E65214003897BF /* BitcoinTickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D780FEB20E4D20E003897BF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6D780FEA20E4D20E003897BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D780FED20E4D20E003897BF /* Pods_BitcoinTicker.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_BitcoinTicker.framework;
+			remoteRef = 6D780FEC20E4D20E003897BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D780FEF20E4D20E003897BF /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 6D780FEE20E4D20E003897BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A618231C53C381007AF001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A618331C53C381007AF001 /* LaunchScreen.storyboard in Resources */,
+				63A618301C53C381007AF001 /* Assets.xcassets in Resources */,
+				63A6182E1C53C381007AF001 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D780FF220E65214003897BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF69213CBB61CC84B080488 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinTicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5897229423BB72BAE24CA1F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTicker/Pods-BitcoinTicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTicker/Pods-BitcoinTicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B6DD44DB50B6F49137FFCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinTicker/Pods-BitcoinTicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63A618211C53C381007AF001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A6182B1C53C381007AF001 /* ViewController.swift in Sources */,
+				63A618291C53C381007AF001 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D780FF020E65214003897BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D780FF720E65215003897BF /* BitcoinTickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D780FFA20E65215003897BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A618241C53C381007AF001 /* BitcoinTicker */;
+			targetProxy = 6D780FF920E65215003897BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63A6182C1C53C381007AF001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A6182D1C53C381007AF001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63A618311C53C381007AF001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A618321C53C381007AF001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63A618351C53C381007AF001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63A618361C53C381007AF001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63A618381C53C381007AF001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A46877D863A375B969E8C58 /* Pods-BitcoinTicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4XGN67BQAE;
+				INFOPLIST_FILE = BitcoinTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrixiosblr.BitcoinTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		63A618391C53C381007AF001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0DFB6BECD8BD02A699BDA7 /* Pods-BitcoinTicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4XGN67BQAE;
+				INFOPLIST_FILE = BitcoinTicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrixiosblr.BitcoinTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		6D780FFC20E65215003897BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BitcoinTickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrixiosblr.BitcoinTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinTicker.app/BitcoinTicker";
+			};
+			name = Debug;
+		};
+		6D780FFD20E65215003897BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BitcoinTickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrixiosblr.BitcoinTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinTicker.app/BitcoinTicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63A618201C53C381007AF001 /* Build configuration list for PBXProject "BitcoinTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A618351C53C381007AF001 /* Debug */,
+				63A618361C53C381007AF001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A618371C53C381007AF001 /* Build configuration list for PBXNativeTarget "BitcoinTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A618381C53C381007AF001 /* Debug */,
+				63A618391C53C381007AF001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D780FFB20E65215003897BF /* Build configuration list for PBXNativeTarget "BitcoinTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D780FFC20E65215003897BF /* Debug */,
+				6D780FFD20E65215003897BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63A6181D1C53C381007AF001 /* Project object */;
+}
