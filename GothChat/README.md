@@ -15,3 +15,5 @@ end
 ## Finished App
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/Flash%20Chat.gif)
 
+## NOTES
+The Chameleon and SVProgressHUD were meant to be used to make various effects and would be a good addition for User Experience. 
