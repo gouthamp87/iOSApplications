@@ -3,7 +3,7 @@
 //  BitcoinTickerTests
 //
 //  Created by Goutham on 6/29/18.
-//  Copyright © 2018 London App Brewery. All rights reserved.
+//  Copyright © 2018 Goth iOS Apps. All rights reserved.
 //
 
 import XCTest

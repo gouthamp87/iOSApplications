@@ -2,8 +2,8 @@
 //  ChangeCityViewController.swift
 //  WeatherApp
 //
-//  Created by Angela Yu on 23/08/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
+//  Created by Goutham on 08/24/17.
+//  Copyright © 2018 Goth iOS Apps. All rights reserved.
 //
 
 import UIKit
