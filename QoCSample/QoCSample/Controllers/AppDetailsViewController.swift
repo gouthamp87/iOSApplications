@@ -15,11 +15,11 @@ class AppDetailsViewController: UIViewController {
     @IBOutlet var appIcon: UIImageView!
     @IBOutlet var dateOfRelease: UILabel!
     @IBOutlet var nameOfPublisher: UILabel!
-    @IBOutlet var linkOfPublisher: UILabel!
+    @IBOutlet var linkOfPublisher: UITextView!
     @IBOutlet var priceOfApp: UILabel!
-    @IBOutlet var linkToApp: UILabel!
     @IBOutlet var summaryOfApp: UITextView!
     
+    @IBOutlet var linkToApp: UITextView!
     var appDetails : AppDataModel?
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,9 +15,10 @@ class TopAppsViewController : UITableViewController {
     var selectedItem : Int?
     @IBOutlet var appListView: UITableView!
 
-    //    dispatch_queue_t myCustomQueue;
+//    dispatch_queue_t myCustomQueue;
 //    myCustomQueue = dispatch_queue_create("com.citrixiOSblr.QoCSampleImages", NULL);
     let imageDownloadQueue = DispatchQueue(label: "com.citrixiOSblr.QoCSampleImages")
+    let imageDownloadGroup = DispatchGroup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,10 +113,12 @@ class TopAppsViewController : UITableViewController {
             appData.thumbNailPath = Utilities.fetchThumbNailLinkFromEntry(app: app as! [String : AnyObject])
             //         thumbNail = iconPaths![2] as? NSDictionary
             //Download the image and Store it.
-//            dispatch_async(myCustomQueue, ^{
-            downloadThumbNailImage(url: URL(string: appData.thumbNailPath!)!, index: index)
+            imageDownloadGroup.enter()
+            imageDownloadQueue.async(group: imageDownloadGroup, execute: {self.downloadThumbNailImage(url: URL(string: appData.thumbNailPath!)!, index: index)})
+            
             appData.iconPath = Utilities.fetchAppICONFromEntry(app: app as! [String : AnyObject])
-            downloadAppIconImage(url: URL(string: appData.thumbNailPath!)!, index: index)
+            imageDownloadGroup.enter()
+            imageDownloadQueue.async(group: imageDownloadGroup, execute: {self.downloadAppIconImage(url: URL(string: appData.iconPath!)!, index: index)})
             // Price
             appData.priceWithCurrency = Utilities.fetchPriceFromEntry(app: app as! [String : AnyObject])
             // Publisher Link And Name
@@ -124,7 +127,8 @@ class TopAppsViewController : UITableViewController {
             self.appsList.append(appData)
             index = index + 1
         }
-        reloadTableView()
+//        imageDownloadGroup.notify(queue: DispatchQueue.main, work: {self.reloadTableView()})
+        imageDownloadGroup.notify(queue: DispatchQueue.main, execute: {self.reloadTableView()})
         
     }
 
@@ -147,6 +151,7 @@ class TopAppsViewController : UITableViewController {
             print("Download Finished")
             let image = UIImage(data: data)!
             self.appsList[index].thumbNailImage = image
+            self.imageDownloadGroup.leave()
         }
     }
     
@@ -158,6 +163,7 @@ class TopAppsViewController : UITableViewController {
             print("Download Finished")
             let image = UIImage(data: data)!
             self.appsList[index].iconImage = image
+            self.imageDownloadGroup.leave()
         }
     }
     

@@ -46,7 +46,9 @@ class Utilities{
         let releaseDate = app["im:releaseDate"]?["label"] as? String
         //TODO: Release Date as MM/DD/YY Format
         let date = releaseDate?.split(separator: "T")[0]
-        return String(date!)
+        let columns = date?.split(separator: "-")
+        let finalDateString = columns![1] + "/" + columns![2] + "/" + columns![0]
+        return String(finalDateString)
     }
     
     static func fetchThumbNailLinkFromEntry(app: [String:AnyObject])->String{
