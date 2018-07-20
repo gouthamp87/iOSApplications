@@ -45,7 +45,8 @@ class Utilities{
     static func fetchReleaseDateFromEntry(app: [String:AnyObject])->String{
         let releaseDate = app["im:releaseDate"]?["label"] as? String
         //TODO: Release Date as MM/DD/YY Format
-        return releaseDate!
+        let date = releaseDate?.split(separator: "T")[0]
+        return String(date!)
     }
     
     static func fetchThumbNailLinkFromEntry(app: [String:AnyObject])->String{

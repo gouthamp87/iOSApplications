@@ -11,31 +11,40 @@ import UIKit
 class TopAppsViewController : UITableViewController {
 
     var appsList : [AppDataModel] = [AppDataModel]()
-    
+    var refresh : UIRefreshControl = UIRefreshControl()
+    var selectedItem : Int?
     @IBOutlet var appListView: UITableView!
-    
-//    dispatch_queue_t myCustomQueue;
+
+    //    dispatch_queue_t myCustomQueue;
 //    myCustomQueue = dispatch_queue_create("com.citrixiOSblr.QoCSampleImages", NULL);
-    
+    let imageDownloadQueue = DispatchQueue(label: "com.citrixiOSblr.QoCSampleImages")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Add pull to refresh feature
+        refresh.backgroundColor = UIColor.clear
+        refresh.tintColor = UIColor.black
+        refresh.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresh.addTarget(self, action: #selector(fetchTopApps), for: .valueChanged)
+        self.tableView.addSubview(refresh)
         appListView.register(UINib(nibName: "AppList", bundle: nil), forCellReuseIdentifier: "AppList")
+        // Configure the Table View.
         configureTableView()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         fetchTopApps()
     }
 
-    // Pragma Mark - Table View Delegates
+    // Pragma Mark - Table View Delegates to create Cells
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return appsList.count
     }
@@ -51,10 +60,15 @@ class TopAppsViewController : UITableViewController {
         return 1
     }
     
+    // Delegates for Selection
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedItem = indexPath.row
+        tableView.deselectRow(at: indexPath, animated: true)
+        displayAppDetails();
+    }
     
     
-    
-    func fetchTopApps() {
+    @objc func fetchTopApps() {
         let path = "http://phobos.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=100/json"
         let urlPath = URL.init(string: path)
         var request = URLRequest.init(url: urlPath!)
@@ -71,6 +85,10 @@ class TopAppsViewController : UITableViewController {
             }
         }
         task.resume()
+        if (self.refresh.isRefreshing)
+        {
+            self.refresh.endRefreshing()
+        }
     }
     
     func parseJSONData(jsonData:Any) -> Void {
@@ -95,10 +113,9 @@ class TopAppsViewController : UITableViewController {
             //         thumbNail = iconPaths![2] as? NSDictionary
             //Download the image and Store it.
 //            dispatch_async(myCustomQueue, ^{
-                downloadImage(url: URL(string: appData.thumbNailPath!)!, index: index)
-//            });
-            
+            downloadThumbNailImage(url: URL(string: appData.thumbNailPath!)!, index: index)
             appData.iconPath = Utilities.fetchAppICONFromEntry(app: app as! [String : AnyObject])
+            downloadAppIconImage(url: URL(string: appData.thumbNailPath!)!, index: index)
             // Price
             appData.priceWithCurrency = Utilities.fetchPriceFromEntry(app: app as! [String : AnyObject])
             // Publisher Link And Name
@@ -107,14 +124,12 @@ class TopAppsViewController : UITableViewController {
             self.appsList.append(appData)
             index = index + 1
         }
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        reloadTableView()
         
     }
 
     func configureTableView() {
-        appListView.rowHeight = 57
+        appListView.rowHeight = 64
         appListView.estimatedRowHeight = 120
     }
     
@@ -124,8 +139,7 @@ class TopAppsViewController : UITableViewController {
         }.resume()
     }
     
-    func downloadImage(url: URL, index : Int) {
-
+    func downloadThumbNailImage(url: URL, index : Int) {
         print("Download Started")
         getDataFromUrl(url: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -136,6 +150,33 @@ class TopAppsViewController : UITableViewController {
         }
     }
     
+    func downloadAppIconImage(url: URL, index : Int) {
+        print("Download Started")
+        getDataFromUrl(url: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            let image = UIImage(data: data)!
+            self.appsList[index].iconImage = image
+        }
+    }
+    
+    func reloadTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func displayAppDetails()  {
+        performSegue(withIdentifier: "appDetails", sender: self)
+    }
 
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC : AppDetailsViewController = segue.destination as! AppDetailsViewController
+        destVC.appDetails = appsList[selectedItem!]
+    }
+   
+    
 }
 
