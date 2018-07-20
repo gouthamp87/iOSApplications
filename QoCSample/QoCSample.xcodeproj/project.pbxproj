@@ -46,6 +46,7 @@
 		6DACAFDB21024CAD00E6B89B /* QoCSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QoCSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DACAFDD21024CAE00E6B89B /* QoCSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoCSampleTests.swift; sourceTree = "<group>"; };
 		6DACAFDF21024CAE00E6B89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DACAFE521027EE700E6B89B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		6DACAF882101178700E6B89B = {
 			isa = PBXGroup;
 			children = (
+				6DACAFE521027EE700E6B89B /* README.md */,
 				6DACAF932101178700E6B89B /* QoCSample */,
 				6DACAFDC21024CAD00E6B89B /* QoCSampleTests */,
 				6DACAF922101178700E6B89B /* Products */,
