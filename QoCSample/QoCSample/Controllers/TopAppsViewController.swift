@@ -98,8 +98,7 @@ class TopAppsViewController : UITableViewController {
         // TODO: Use guard let to be more robust.
         let jsonResult = Utilities.parseResponse(jsonData: jsonData)
         let appEntries = Utilities.fetchEntries(jsonResult: jsonResult)
-        var index = 0
-        for app in appEntries {
+        for (index,app) in appEntries.enumerated() {
             let appData = AppDataModel()
             // Fetch Title
             appData.title = Utilities.fetchTitleFromEntry(app: app as! [String : AnyObject])
@@ -125,10 +124,11 @@ class TopAppsViewController : UITableViewController {
             appData.publisherLink = Utilities.fetchPublisherLinkFromEntry(app: app as! [String : AnyObject])
             appData.publisherName = Utilities.fetchPublisherNameFromEntry(app: app as! [String : AnyObject])
             self.appsList.append(appData)
-            index = index + 1
         }
 //        imageDownloadGroup.notify(queue: DispatchQueue.main, work: {self.reloadTableView()})
-        imageDownloadGroup.notify(queue: DispatchQueue.main, execute: {self.reloadTableView()})
+        imageDownloadGroup.notify(queue: DispatchQueue.main, execute: {
+            print("Finished Downloading All Images")
+            self.reloadTableView()})
         
     }
 
@@ -137,32 +137,32 @@ class TopAppsViewController : UITableViewController {
         appListView.estimatedRowHeight = 120
     }
     
-    func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+    func getDataFromUrl(url: URL,  index : Int, completion: @escaping (Data?, URLResponse?, Error?, Int?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            completion(data, response, error)
+            completion(data, response, error, index)
         }.resume()
     }
     
     func downloadThumbNailImage(url: URL, index : Int) {
         print("Download Started")
-        getDataFromUrl(url: url) { data, response, error in
+        getDataFromUrl(url: url, index : index) { data, response, error, index in
             guard let data = data, error == nil else { return }
             print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
+            print("Download AppThumbNail Finished for \(index!)")
             let image = UIImage(data: data)!
-            self.appsList[index].thumbNailImage = image
+            self.appsList[index!].thumbNailImage = image
             self.imageDownloadGroup.leave()
         }
     }
     
     func downloadAppIconImage(url: URL, index : Int) {
         print("Download Started")
-        getDataFromUrl(url: url) { data, response, error in
+        getDataFromUrl(url: url, index : index) { data, response, error, index in
             guard let data = data, error == nil else { return }
             print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
+            print("Download AppICON Finished for \(index!)")
             let image = UIImage(data: data)!
-            self.appsList[index].iconImage = image
+            self.appsList[index!].iconImage = image
             self.imageDownloadGroup.leave()
         }
     }

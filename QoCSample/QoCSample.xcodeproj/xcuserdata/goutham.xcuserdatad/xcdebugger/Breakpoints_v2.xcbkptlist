@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6630141"
+            timestampString = "553876534.558323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.663179"
+            timestampString = "553876534.55874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.663322"
+            timestampString = "553876534.558956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6635031"
+            timestampString = "553876534.559149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6636699"
+            timestampString = "553876534.559342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.663853"
+            timestampString = "553876534.559531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.664026"
+            timestampString = "553876534.559724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6641901"
+            timestampString = "553876534.55992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "parseJSONData(jsonData:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.664386"
+            timestampString = "553876534.560114"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6646399"
+            timestampString = "553876534.560307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -170,23 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.664836"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "downloadThumbNailImage(url:index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.6649801"
+            timestampString = "553876534.5605"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -202,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/AppDetailsViewController.swift"
-            timestampString = "553811191.665091"
+            timestampString = "553840620.250488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -218,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/AppDetailsViewController.swift"
-            timestampString = "553811191.665204"
+            timestampString = "553840620.250568"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -296,7 +280,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.665293"
+            timestampString = "553876534.560762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -312,7 +296,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.665368"
+            timestampString = "553876534.560956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "171"
@@ -356,11 +340,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/Controllers/TopAppsViewController.swift"
-            timestampString = "553811191.665446"
+            timestampString = "553876534.561147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
@@ -376,12 +360,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QoCSample/UtilityFunctions/Utilities.swift"
-            timestampString = "553811191.665554"
+            timestampString = "553840620.251436"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "fetchReleaseDateFromEntry(app:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QoCSample/Controllers/TopAppsViewController.swift"
+            timestampString = "553876534.561368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "downloadThumbNailImage(url:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QoCSample/Controllers/TopAppsViewController.swift"
+            timestampString = "553876534.5615619"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "downloadThumbNailImage(url:index:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
