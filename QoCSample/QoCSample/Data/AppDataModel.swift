@@ -20,7 +20,4 @@ class AppDataModel {
     var thumbNailPath       : String?
     var thumbNailImage : UIImage?
     var iconImage : UIImage?
-    func setAppInfo(input : JSONSerialization) -> Void {
-        //Set all the above info here.
-    }
 }

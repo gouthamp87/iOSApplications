@@ -23,7 +23,6 @@ class AppDetailsViewController: UIViewController {
     var appDetails : AppDataModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         navigationBar.topItem?.title = appDetails?.title
         appIcon.image = appDetails?.iconImage
