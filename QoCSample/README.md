@@ -18,7 +18,7 @@ Hack for App Transport Security Override Since this isn't https
 </dict>
 
 # ToDO
-- Unit Tests(ah the necessary evil)
+- Unit Tests To be done.
 - Move around the Data out of ViewController.   - Done
 - Move the fetching of Data and Network Request to Utilitites + make a Generic URL wrapper function. It would make more sense. - Done
 - The currency can be trimmed down to two decimals. - TODO
