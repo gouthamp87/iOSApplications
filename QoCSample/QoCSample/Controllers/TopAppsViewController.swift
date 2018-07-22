@@ -16,9 +16,9 @@ class TopAppsViewController : UITableViewController, AppDataDelegate {
     var selectedItem :Int?
     override func viewDidLoad() {
         print("View Will Appear")
+        super.viewDidLoad()
         // Try to get the apps
         fetchTopApps()
-        super.viewDidLoad()
         // Add pull to refresh feature
         setUpPullToRefresh()
         // Configure the Table View.
@@ -90,6 +90,7 @@ class TopAppsViewController : UITableViewController, AppDataDelegate {
     }
     
     func displayAppDetails()  {
+        // Now show the app details.
         performSegue(withIdentifier: "appDetails", sender: self)
     }
 

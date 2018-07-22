@@ -57,8 +57,12 @@ class AppData {
         // This will reduce the network request.
         let newAppEntries = Utilities.fetchEntries(jsonResult: jsonResult as NSDictionary)
         if(newAppEntries != self.appEntries){
+            print("New Entries are available. Update the App Entries and Reload the TableViews")
             self.appEntries = newAppEntries
             self.readAppEntries()
+        } else{
+            print("No New Entries are available, data is the same. Don't change and hence no need to reload")
+            
         }
         return true
     }

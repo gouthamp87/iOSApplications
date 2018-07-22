@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D178FAD21037FCF002E586B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D178FAC21037FCF002E586B /* AppData.swift */; };
+		6D40D62D2104C7A500F0A7A3 /* qoc-logo-800x800.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D40D62C2104C7A500F0A7A3 /* qoc-logo-800x800.png */; };
 		6DACAF952101178700E6B89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF942101178700E6B89B /* AppDelegate.swift */; };
 		6DACAF972101178700E6B89B /* TopAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF962101178700E6B89B /* TopAppsViewController.swift */; };
 		6DACAF9A2101178700E6B89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF982101178700E6B89B /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		6D178FAC21037FCF002E586B /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		6D40D62C2104C7A500F0A7A3 /* qoc-logo-800x800.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "qoc-logo-800x800.png"; path = "Assets.xcassets/qoc-logo-800x800.png"; sourceTree = "<group>"; };
 		6DACAF912101178700E6B89B /* QoCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QoCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DACAF942101178700E6B89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DACAF962101178700E6B89B /* TopAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppsViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				6DACAFC72101404200E6B89B /* Controllers */,
 				6DACAFC62101403900E6B89B /* Views */,
 				6DACAF9B2101178900E6B89B /* Assets.xcassets */,
+				6D40D62C2104C7A500F0A7A3 /* qoc-logo-800x800.png */,
 				6DACAF9D2101178900E6B89B /* LaunchScreen.storyboard */,
 				6DACAFA02101178900E6B89B /* Info.plist */,
 				6DACAFCA2101406200E6B89B /* Data */,
@@ -239,6 +242,7 @@
 			files = (
 				6DACAF9F2101178900E6B89B /* LaunchScreen.storyboard in Resources */,
 				6DACAFCD21014A1700E6B89B /* AppList.xib in Resources */,
+				6D40D62D2104C7A500F0A7A3 /* qoc-logo-800x800.png in Resources */,
 				6DACAF9C2101178900E6B89B /* Assets.xcassets in Resources */,
 				6DACAF9A2101178700E6B89B /* Main.storyboard in Resources */,
 			);

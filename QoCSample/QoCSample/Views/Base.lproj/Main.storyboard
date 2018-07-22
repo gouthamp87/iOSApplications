@@ -25,9 +25,7 @@
                     </tableView>
                     <connections>
                         <outlet property="appListView" destination="wpJ-qS-FzF" id="L6E-bN-L0C"/>
-                        <segue destination="3FG-ke-aaC" kind="popoverPresentation" identifier="appDetails" popoverAnchorView="wpJ-qS-FzF" id="wxw-xB-AOh">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
+                        <segue destination="3FG-ke-aaC" kind="presentation" identifier="appDetails" modalPresentationStyle="overCurrentContext" id="wxw-xB-AOh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EB3-PX-KyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +80,7 @@
                                     <navigationItem title="Title" id="HOu-kw-E7k">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="N6r-SV-X0I">
                                             <connections>
-                                                <segue destination="cv6-ry-hhe" kind="show" id="Gw9-Yq-j37"/>
+                                                <action selector="dismissSelf:" destination="3FG-ke-aaC" id="HB8-AU-SVp"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
