@@ -1,8 +1,9 @@
 #  QoCSample
 A sample project to interact with http://phobos.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=100/json and get the info of top 100 paid iOS apps on AppStore.
 
-Hack for App Transport Security Override Since this isn't https
+## Hack for App Transport Security Override Since this isn't licenced.
 
+```XML
 <key>NSAppTransportSecurity</key>
 <dict>
 <key>NSExceptionDomains</key>
@@ -16,8 +17,9 @@ Hack for App Transport Security Override Since this isn't https
 </dict>
 </dict>
 </dict>
+```
 
-# ToDO
+## ToDO
 - Unit Tests(ah the necessary evil)
 - Move around the Data out of ViewController.   - Done
 - Move the fetching of Data and Network Request to Utilitites + make a Generic URL wrapper function. It would make more sense. - Done
@@ -25,7 +27,7 @@ Hack for App Transport Security Override Since this isn't https
 - Parse the date to the correct format. - Done
 - The utilities description need to be written. But most of them are intuitive.
 
-#Caveats
+## Caveats
 - It a intruiging challenge and I was doing this up from scratch, including the custom Cells.
 - Since there was an ask to use iOS Network API's assumed the same would be true for JSON Parsing, else we could have used Alamofire and SwiftyJSON to make things simpler. Also I didn't see the need to import a complete library for just parsing a few json values and making a few simple URLRequests.
 - I tried to keep the UI Simple and strictly towards iPhones, haven't even considered iPads. The UI might be going totally awry if someone tries to do that.
