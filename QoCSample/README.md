@@ -19,8 +19,13 @@ A sample project to interact with http://phobos.apple.com/WebObjects/MZStoreServ
 </dict>
 ```
 
+<<<<<<< HEAD
 ## ToDO
 - Unit Tests(ah the necessary evil)
+=======
+# ToDO
+- Unit Tests To be done.
+>>>>>>> ede82ef238f668fb9ef5a8cacab336be951ee662
 - Move around the Data out of ViewController.   - Done
 - Move the fetching of Data and Network Request to Utilitites + make a Generic URL wrapper function. It would make more sense. - Done
 - The currency can be trimmed down to two decimals. - TODO
