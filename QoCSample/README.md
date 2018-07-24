@@ -32,7 +32,6 @@ A sample project to interact with http://phobos.apple.com/WebObjects/MZStoreServ
 
 ## Caveats
 - It a intruiging challenge and I was doing this up from scratch, including the custom Cells.
-- Since there was an ask to use iOS Network API's assumed the same would be true for JSON Parsing, else we could have used Alamofire and SwiftyJSON to make things simpler. Also I didn't see the need to import a complete library for just parsing a few json values and making a few simple URLRequests.
 - I tried to keep the UI Simple and strictly towards iPhones, haven't even considered iPads. The UI might be going totally awry if someone tries to do that.
 - I tried to keep the code as modular as possible, but due to the speed of tryign to get this app up I might have missed something.
 - The initial launch/first install would take a while for the apps to showup. But the user interaction can be avoided using a heads up display library like SVProgressHUD, but then again I didn't want to bloat up the app, tried to keep it to requirements. There is an experience Glitch.
